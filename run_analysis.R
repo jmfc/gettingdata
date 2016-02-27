@@ -67,6 +67,8 @@ rm(subjects, activity, features, short, ys)
 
 # To create the second table we group the table by subject and activity
 
+library(dplyr)
+
 groups <- group_by(final, subject, Activity, add = TRUE)
 
 # Then we calculate the mean of each column except subject and activity
